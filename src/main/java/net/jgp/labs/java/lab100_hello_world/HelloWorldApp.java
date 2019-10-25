@@ -3,7 +3,6 @@ package net.jgp.labs.java.lab100_hello_world;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 /**
  * What does it do?
  * 
@@ -12,6 +11,7 @@ import org.slf4j.LoggerFactory;
 public class HelloWorldApp {
   private static final Logger log =
       LoggerFactory.getLogger(HelloWorldApp.class);
+
   /**
    * main() is your entry point to the application.
    * 
@@ -25,7 +25,7 @@ public class HelloWorldApp {
   /**
    * The processing code.
    */
-  private boolean start(int argCount) {
+  protected boolean start(int argCount) {
     log.debug("-> start({})", argCount);
     return true;
   }
