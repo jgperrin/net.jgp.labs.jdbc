@@ -35,7 +35,7 @@ public class SelectFromMicrosoftAccessApp {
     log.debug("-> start({})", argCount);
 
     String databaseURL =
-        "jdbc:ucanaccess:///Users/jgp/Documents/Jean-Georges/Work/AAP/Projects/1909 B2C OCC/Data/AAIA_VCdb2009_Access2007_20190927/AAIA VCdb2009 Access2007 Complete VCDB 20190927.accdb";
+        "jdbc:ucanaccess:///myaccessfile.accdb";
 
     try {
       Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
