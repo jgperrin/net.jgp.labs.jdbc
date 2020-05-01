@@ -5,7 +5,6 @@ import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,8 +33,7 @@ public class PostgresSqlListTablesApp {
 	protected boolean start() {
 		log.debug("-> start()");
 
-//		String database = "spark_labs";
-		String database = "VCdb";
+		String database = "spark_labs";
 		String username = "postgres";
 		String password = "Spark<3Java";
 		String url = "jdbc:postgresql://localhost/";
@@ -57,7 +55,6 @@ public class PostgresSqlListTablesApp {
 			e.printStackTrace();
 			return false;
 		}
-		
 
 		String[] types = { "TABLE", "VIEW" };
 
@@ -77,7 +74,6 @@ public class PostgresSqlListTablesApp {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-
 		}
 
 		return true;
